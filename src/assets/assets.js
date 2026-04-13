@@ -2,22 +2,22 @@ export const my_services = [
   {
     title: "Web Application UI Development",
     desc: "Building modern and responsive dashboards and admin interfaces with clean design and smooth interactions.",
-    icon: "/src/assets/icons images/website.png",
+    icon: "/assets/icons images/website.png",
   },
   {
     title: "Landing Page Development",
     desc: "Creating high-quality landing pages optimized for conversions, performance, and user experience.",
-    icon: "/src/assets/icons images/landing.png",
+    icon: "/assets/icons images/landing.png",
   },
   {
     title: "eCommerce Frontend Development",
     desc: "Developing user-friendly eCommerce interfaces including product listings, filters, cart, and checkout experience.",
-    icon: "/src/assets/icons images/eCommerce.png",
+    icon: "/assets/icons images/eCommerce.png",
   },
   {
     title: "LMS Frontend Development",
     desc: "Building intuitive learning platform interfaces with structured layouts for courses, lessons, and user dashboards.",
-    icon: "/src/assets/icons images/LMS.png",
+    icon: "/assets/icons images/LMS.png",
   },
   // {
   //   title: "Interactive Web Games Development",
