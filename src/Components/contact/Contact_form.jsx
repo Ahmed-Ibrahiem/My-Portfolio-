@@ -177,11 +177,6 @@ const Contact_form = () => {
               <span>Send Message</span>
               <i className="fa-regular fa-paper-plane"></i>
             </button>
-            <a
-              className={`${btnStyle} text-white! bg-main! hover:text-main! hover:bg-transparent! border-2 border-main`}
-            >
-              <span>CV</span> <i className="fa-solid fa-download"></i>
-            </a>
           </div>
         </form>
       </div>
