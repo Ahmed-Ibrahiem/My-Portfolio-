@@ -11,15 +11,22 @@ const Projects_providor = ({ children }) => {
   });
   const [all_my_projects, set_all_my_projects] = useState([]);
   const [data_will_display, set_data_will_display] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [isError, setIsError] = useState(false);
 
   // Get the projects data from json file
   useEffect(() => {
     const fetch_api = async () => {
       try {
+        setIsLoading(true);
         const req = await axios.get(projects_url);
         const res = await req.data;
         set_all_my_projects(res);
-      } catch (err) {}
+      } catch (err) {
+        setIsError(true);
+      } finally {
+        setIsLoading(false);
+      }
     };
 
     fetch_api();
@@ -32,7 +39,7 @@ const Projects_providor = ({ children }) => {
   const get_data_will_display = () => {
     if (!all_my_projects) return;
     let display_data = all_my_projects.filter(
-      (data) => data.category == current_filter.value
+      (data) => data.category == current_filter.value,
     );
 
     if (current_filter.value == "all") display_data = all_my_projects;
@@ -44,6 +51,8 @@ const Projects_providor = ({ children }) => {
     current_filter,
     set_current_filter,
     data_will_display,
+    isLoading,
+    isError,
   };
   return (
     <projects_context.Provider value={value}>

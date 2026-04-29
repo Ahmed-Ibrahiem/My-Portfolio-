@@ -90,6 +90,11 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box !important;
   transition: all 0.3s linear;
+  border: none;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -130,9 +135,7 @@ body {
     @apply flex flex-col justify-between items-center;
   }
 
-  .bottom-gradient-border {
-    position: relative;
-  }
+
 
   .adjust-image {
     display: flex;
@@ -153,9 +156,16 @@ body {
 
   .gradient-border {
     position: relative;
+    
   }
 
-  .gradient-border::after,
+  .gradient-border::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+  }
+
   .gradient-border::before {
     content: "";
     position: absolute;
@@ -298,6 +308,15 @@ body {
   .bubbles-animation {
     animation: bubbles-animation 7s both infinite linear;
   }
+
+  .loading-animation {
+    animation: loading-animate 2s infinite linear;
+  }
+
+  .loading-animation2 {
+    animation: loading-animate2 2s infinite linear;
+  }
+
 }
 
 @keyframes fade-in {
@@ -337,6 +356,40 @@ body {
   100% {
     bottom: 100%;
     rotate: -360deg;
+  }
+}
+
+@keyframes loading-animate {
+  0% {
+    scale: 0;
+    opacity: 0;
+  }
+
+  50% {
+    scale: 1;
+    opacity: 1;
+  }
+
+  100% {
+    scale: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes loading-animate2 {
+  0% {
+    scale: 1;
+    opacity: 1;
+  }
+
+  50% {
+    scale: 0;
+    opacity: 0;
+  }
+
+  100% {
+    scale: 1;
+    opacity: 1;
   }
 }
 

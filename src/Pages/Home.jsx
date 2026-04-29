@@ -1,18 +1,23 @@
-import React from "react";
-import profile_image from "../assets/profile_image.jpg";
+import React, { useState } from "react";
+import profile_image from "../assets/profile-image.jpeg";
+import Skeleton from "react-loading-skeleton";
+import "react-loading-skeleton/dist/skeleton.css";
+import { FaFacebook, FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa6";
 const Home = () => {
+  const [imageLoaded, setImageLoaded] = useState(false);
   const communication = [
     {
       link: "https://github.com/Ahmed-Ibrahiem",
-      icon: "fa-brands fa-github",
+      icon: FaGithub,
     },
     {
       link: "https://www.linkedin.com/in/ahmed-ibrahiem-1796b7328/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BRvkzO6GoSYaGWDHYR3Q%2FPg%3D%3D",
-      icon: "fa-brands fa-linkedin",
+      icon: FaLinkedin,
     },
     {
       link: "https://www.facebook.com/POOMMECOM",
-      icon: "fa-brands fa-facebook",
+      icon: FaFacebook,
     },
   ];
 
@@ -20,8 +25,23 @@ const Home = () => {
     <div className={`profile_card ${profile_card} `}>
       <div className="card_cover h-full!">
         <div className={`image_box ${image_box_style}`}>
+          {!imageLoaded && (
+            <Skeleton
+              width="750px"
+              height="750px"
+              style={{
+                minWidth: "100%",
+                minHeight: "100%",
+                position: "absolute",
+                left: "0",
+                top: "0",
+              }}
+            />
+          )}
           <img
+            onLoad={() => setImageLoaded(true)}
             className="min-w-full! min-h-full! object-cover! "
+            style={{ opacity: imageLoaded ? 1 : 0 }}
             src={`${profile_image} `}
             alt=""
           />
@@ -29,12 +49,12 @@ const Home = () => {
         <div className={`${prfile_info_style} text-dark-text`}>
           <h1 className="title text-lg font-medium ">Ahmed Ibrahiem</h1>
           <h3 className="subtitle text-sm text-main ">Frontend Developer </h3>
-          <ul className="commun elements-row gap-[15px] mt-[20px] ">
+          <ul className="commun elements-row gap-[15px] text-[24px] mt-5 ">
             {communication.map((com, index) => {
               return (
                 <li key={index}>
                   <a href={`${com.link}`}>
-                    <i className={`${com.icon}`}></i>
+                    <com.icon />
                   </a>
                 </li>
               );
@@ -58,7 +78,7 @@ bg-bg  min-h-[100vh]! xl:min-h-full! xl:h-full rounded-[5px] overflow-hidden rel
 `;
 
 const image_box_style = `
-adjust-image h-[56%]! profile-image-style overflow-hidden
+adjust-image h-[56%]! profile-image-style overflow-hidden relative
 `;
 
 const prfile_info_style = `

@@ -2,33 +2,20 @@ import { createContext, useContext, useReducer, useRef } from "react";
 
 const handle_scroll_context = createContext();
 
-const scroll_reducer = (state, action) => {
-  switch (action) {
-    case "ABOUT":
-      scrollTo(state.about.scrollY);
-      break;
-    case "SKILLS":
-      scrollTo(state.skills.scrollY);
-      break;
-    default:
-      return state;
-  }
-};
-
 const Handle_scroll_provider = ({ children }) => {
-  const initial_value = {
+  const scroll_tartget = {
     about: useRef(null),
     skills: useRef(null),
     projects: useRef(null),
   };
 
-  const [scroll_tartget, dispatch_scroll_target] = useReducer(
-    scroll_reducer,
-    initial_value
-  );
+  const scroll_to = (ref) => {
+    ref?.current?.scrollIntoView({ behavior: "smooth" });
+  };
 
   const value = {
-    scroll_tartget
+    scroll_tartget,
+    scroll_to,
   };
   return (
     <handle_scroll_context.Provider value={value}>

@@ -172,13 +172,17 @@ const Contact_form = () => {
             )}
           </div>
 
-          <button
-            type="submit"
-            className="bg-gray-light p-[15px_30px] w-fit rounded-[5px] elements-center-row gap-2.5 font-medium hover:text-main"
-          >
-            <span>Send Message</span>
-            <i className="fa-regular fa-paper-plane"></i>
-          </button>
+          <div className="flex items-center gap-3">
+            <button type="submit" className={btnStyle}>
+              <span>Send Message</span>
+              <i className="fa-regular fa-paper-plane"></i>
+            </button>
+            <a
+              className={`${btnStyle} text-white! bg-main! hover:text-main! hover:bg-transparent! border-2 border-main`}
+            >
+              <span>CV</span> <i className="fa-solid fa-download"></i>
+            </a>
+          </div>
         </form>
       </div>
     </div>
@@ -186,12 +190,17 @@ const Contact_form = () => {
 };
 
 const input_style = `
-border-[2px] border-hover p-[10px_15px] outline-none duration-300! focus:rounded-0! focus:transition-all focus:border-main
-w-full
+border-[2px]! border-hover! p-[10px_15px] outline-none duration-300! focus:rounded-0! focus:transition-all focus:border-main!
+w-full 
 `;
 
 const error_message_style = `
 absolute left-0 top-[calc(100%+2px)] text-xs text-red-400
+`;
+
+const btnStyle = `
+bg-gray-light p-[12px_26px] w-fit rounded-[5px] elements-center-row gap-2.5 font-medium hover:text-main border-2
+border-gray-light cursor-pointer
 `;
 
 export default Contact_form;

@@ -2,9 +2,9 @@ import { use_projects_context } from "../../Contexts/Projects_providor";
 
 const Projects_grid = () => {
   const { data_will_display } = use_projects_context();
-
+  //
   return (
-    <div className="projects_grid grid md:grid-cols-2  ">
+    <div className="projects_grid lg:w-[96%] mx-auto grid md:grid-cols-[repeat(auto-fill,minmax(250px,1fr))] ">
       {data_will_display.map((data, index) => {
         return (
           <div
@@ -40,7 +40,7 @@ const Projects_grid = () => {
 };
 
 const project_style = `
-project min-w-[250px] w-full p-[20px] gradient-border border-bottom-center
+project gradient-border border-bottom-center p-[20px]
 elements-column gap-[15px] group before:hidden! md:before:block!
 `;
 
