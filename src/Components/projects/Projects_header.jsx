@@ -25,7 +25,7 @@ const Projects_header = () => {
   }, [filter_menu_ref]);
 
   return (
-    <div className={`${header_style} z-[100]`}>
+    <div className={`${header_style} z-[100] pr-[10px]`}>
       <Section_title title={"Projects"} style={`p-[20px]! after:hidden!`} />
       {/* <FilterMenu
         filter_menu_ref={filter_menu_ref}

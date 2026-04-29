@@ -2,7 +2,7 @@ import { BsFileEarmarkPerson } from "react-icons/bs";
 
 const Section_title = ({ title, style }) => {
   return (
-    <div className="gradient-border border-bottom-left flex justify-between items-center">
+    <div className="gradient-border border-bottom-left flex justify-between items-center w-full">
       <h1
         className={`section-title-style  p-[20px_0] text-dark-text! ${style}`}
       >

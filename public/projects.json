@@ -1,51 +1,6 @@
 [
   {
     "id": 1,
-    "title": "StaffM - Employee Management Dashboard",
-    "description": "Full-featured HR dashboard for managing employees with CRUD operations, analytics, and advanced client-side state management using Vanilla JavaScript.",
-    "category": "dashboard",
-    "technologies": [
-      "HTML5",
-      "CSS3",
-      "JavaScript (ES6+)",
-      "Bootstrap",
-      "Chart.js"
-    ],
-    "image": "/assets/projects/employee-management.png",
-    "demo": "https://staffm-dashboard.netlify.app/",
-    "github": "https://github.com/Ahmed-Ibrahiem/Mini-Employees-Management-System.git"
-  },
-  {
-    "id": 2,
-    "title": "Marcedo - E-Commerce Web Application",
-    "description": "Full-featured e-commerce web application built with React, featuring product browsing, cart management, authentication, and a complete checkout experience.",
-    "category": "ecommerce",
-    "technologies": [
-      "React",
-      "Vite",
-      "React Router",
-      "Axios",
-      "React Hook Form",
-      "Yup",
-      "Swiper",
-      "React Toastify"
-    ],
-    "image": "/assets/projects/marcedo-webstie.png",
-    "demo": "https://marcedo-application.netlify.app/",
-    "github": "https://github.com/Ahmed-Ibrahiem/marcedo-website.git"
-  },
-  {
-    "id": 3,
-    "title": "Alpha Landing Page",
-    "description": "A modern responsive landing page with smooth animations and optimized UI/UX.",
-    "category": "landing-page",
-    "technologies": ["React", "Tailwind CSS"],
-    "image": "/assets/projects/alpha-webstie.png",
-    "demo": "https://alpha-land-page.netlify.app/",
-    "github": "https://github.com/Ahmed-Ibrahiem/Alpha-Projects"
-  },
-  {
-    "id": 4,
     "title": "Educora – CMS Frontend Platform",
     "description": "Scalable learning management system (LMS) frontend built with React and TypeScript, featuring structured architecture, course management, and dynamic user experience.",
     "category": "learning-platform",
@@ -68,7 +23,42 @@
     "github": "https://github.com/Ahmed-Ibrahiem/Educora-CMS-Frontend-Plateform.git"
   },
   {
-    "id": 5,
+    "id": 2,
+    "title": "Marcedo - E-Commerce Web Application",
+    "description": "Full-featured e-commerce web application built with React, featuring product browsing, cart management, authentication, and a complete checkout experience.",
+    "category": "ecommerce",
+    "technologies": [
+      "React",
+      "Vite",
+      "React Router",
+      "Axios",
+      "React Hook Form",
+      "Yup",
+      "Swiper",
+      "React Toastify"
+    ],
+    "image": "/assets/projects/marcedo-webstie.png",
+    "demo": "https://marcedo-application.netlify.app/",
+    "github": "https://github.com/Ahmed-Ibrahiem/marcedo-website.git"
+  },
+  {
+    "id": 3,
+    "title": "StaffM - Employee Management Dashboard",
+    "description": "Full-featured HR dashboard for managing employees with CRUD operations, analytics, and advanced client-side state management using Vanilla JavaScript.",
+    "category": "dashboard",
+    "technologies": [
+      "HTML5",
+      "CSS3",
+      "JavaScript (ES6+)",
+      "Bootstrap",
+      "Chart.js"
+    ],
+    "image": "/assets/projects/employee-management.png",
+    "demo": "https://staffm-dashboard.netlify.app/",
+    "github": "https://github.com/Ahmed-Ibrahiem/Mini-Employees-Management-System.git"
+  },
+  {
+    "id": 4,
     "title": "Product Management Dashboard",
     "description": "Inventory management dashboard for tracking, organizing, and managing products with full CRUD operations.",
     "category": "dashboard",
@@ -82,5 +72,15 @@
     "image": "/assets/projects/products-management.png",
     "demo": "https://simple-products-dashboard.netlify.app/",
     "github": "https://github.com/Ahmed-Ibrahiem/simple-products-management.git"
+  },
+  {
+    "id": 5,
+    "title": "Alpha Landing Page",
+    "description": "A modern responsive landing page with smooth animations and optimized UI/UX.",
+    "category": "landing-page",
+    "technologies": ["React", "Tailwind CSS"],
+    "image": "/assets/projects/alpha-webstie.png",
+    "demo": "https://alpha-land-page.netlify.app/",
+    "github": "https://github.com/Ahmed-Ibrahiem/Alpha-Projects"
   }
 ]
