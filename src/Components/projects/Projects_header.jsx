@@ -27,13 +27,7 @@ const Projects_header = () => {
   return (
     <div className={`${header_style} z-[100] pr-[10px]`}>
       <Section_title title={"Projects"} style={`p-[20px]! after:hidden!`} />
-      {/* <FilterMenu
-        filter_menu_ref={filter_menu_ref}
-        is_filter_open={is_filter_open}
-        set_is_filter_open={set_is_filter_open}
-        current_filter={current_filter}
-        set_current_filter={set_current_filter}
-      /> */}
+
     </div>
   );
 };
