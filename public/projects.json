@@ -19,7 +19,7 @@
       "Swiper"
     ],
     "image": "/assets/projects/educora-cms.png",
-    "demo": "https://educora-cms-frontend-plateform.netlify.app/",
+    "demo": "https://educora-cms-frontend-plateform.vercel.app/",
     "github": "https://github.com/Ahmed-Ibrahiem/Educora-CMS-Frontend-Plateform.git"
   },
   {
@@ -38,7 +38,7 @@
       "React Toastify"
     ],
     "image": "/assets/projects/marcedo-webstie.png",
-    "demo": "https://marcedo-application.netlify.app/",
+    "demo": "https://marcedo-website.vercel.app/",
     "github": "https://github.com/Ahmed-Ibrahiem/marcedo-website.git"
   },
   {
@@ -54,7 +54,7 @@
       "Chart.js"
     ],
     "image": "/assets/projects/employee-management.png",
-    "demo": "https://staffm-dashboard.netlify.app/",
+    "demo": "https://mini-employees-management-system.vercel.app/",
     "github": "https://github.com/Ahmed-Ibrahiem/Mini-Employees-Management-System.git"
   },
   {
@@ -70,7 +70,7 @@
       "React Toastify"
     ],
     "image": "/assets/projects/products-management.png",
-    "demo": "https://simple-products-dashboard.netlify.app/",
+    "demo": "https://simple-products-management.vercel.app/",
     "github": "https://github.com/Ahmed-Ibrahiem/simple-products-management.git"
   },
   {
@@ -80,7 +80,7 @@
     "category": "landing-page",
     "technologies": ["React", "Tailwind CSS"],
     "image": "/assets/projects/alpha-webstie.png",
-    "demo": "https://alpha-land-page.netlify.app/",
+    "demo": "https://alpha-projects.vercel.app/",
     "github": "https://github.com/Ahmed-Ibrahiem/Alpha-Projects"
   }
 ]
